@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Welcome</title>
+        <meta name="Welcome to your startpage" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="src/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript">
+                $(document).ready(function() {
+                    var now = new Date();
+            var hour    = now.getHours();
+            var minute  = now.getMinutes();
+        
+            if (minute < 10) {
+                minute = "0" + minute;
+            };
+            document.getElementById("time_box").innerHTML = hour + "'" + minute;
+                });
+        </script>
+</head>
+
+<body>
+   
+    <div id="container">
+        <div id="time-box"></div>
+        <div class="box" id="left_box">
+            
+            <a href="https://web.telegram.org/#/im/"><li class="box_list" style="background-color: #2980b9;">Telegram</li></a>
+            <a href="https://www.youtube.com/"><li class="box_list" style="background-color: #eb4d4b;">Youtube</li></a>
+            <a href="https://app.groupme.com/chats/"><li class="box_list" style="background-color: #3498db;">Groupme</li></a>
+            <a href="https://amazon.com"><li class="box_list" style="background-color: #f39c12;">Amazon</li></a>
+            <a href="https://www.twitter.com/"><li class="box_list" style="background-color: #2c3e50;">Twitter</li></a>
+            <a href="https://www.reddit.com/"><li class="box_list" style="background-color: #eb4d4b">Reddit</li></a>
+            
+        </div>
+        <div class="box" id="center_box">
+                               <div class="form">
+                                     <input  id="searchbox" name="q" type="text" autocomplete="off" class="cleardefault" maxlength="100"   placeholder="search engine ..." size="17" autofocus="autofocus" />
+                               </div>
+        </div>
+        <div class="box" id="right_box">
+            <a href="https://farmingdale.open.suny.edu/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_1_1"><li class="box_list" style="background-color: #27ae60;">Blackboard</li></a>
+            <a href="https://oasis.farmingdale.edu/pls/prod/twbkwbis.P_WWWLogin"><li class="box_list" style="background-color: #27ae60;">Oasis</li></a>
+            <a href="https://exhentai.org/"><li class="box_list" style="background-color: #c0392b;">Gmail</li></a>
+            <a href="https://www.4chan.org/fit/"><li class="box_list" style="background-color: #9b59b6;">4chan</li></a>
+            <a href="https://www.freecodecamp.org/"><li class="box_list" style="background-color: #130f40">CodeCamp</li></a>
+            <a href="https://m3a.vhlcentral.com/courses/532928/sections/678526"><li class="box_list" style="background-color: #1abc9c;">Cisco</li></a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="src/search.js"></script>
+</html>

@@ -1,0 +1,108 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-image: url("bg-2.jpg");
+}
+#container #time_box {
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 5px;
+  left: 0px;
+  margin: auto !important;
+  text-align: center;
+  color: #fff;
+  font-family: "Pacifico";
+  font-size: 30pt;
+  line-height: 0px;
+  text-shadow: 3px 3px rgba(62, 70, 81, 0.7) !important;
+}
+#container {
+  height: 350px;
+  width: 80%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto !important;
+  text-align: center;
+}
+#container .box {
+  border-radius: 2px;
+  height: 100%;
+  display: inline-block;
+}
+#container #left_box {
+  width: 20%;
+  float: left;
+}
+#container #left_box .box_list {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) !important;
+  color: #fff;
+  font-size: 16pt;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  height: 14.5%;
+  width: 100%;
+  margin-bottom: 9px;
+  line-height: 51px;
+}
+#container #left_box li {
+  position: relative;
+  list-style: none;
+}
+#container #center_box {
+  background: no-repeat url("pile.jpg") center !important;
+  background-size: cover !important;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) !important;
+  width: 58.5%;
+  overflow: hidden;
+}
+#container #center_box #searchbox {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  color: #fff;
+  font-size: 14pt;
+  font-stretch: condensed;
+  line-height: 60px !important;
+  height: 60px;
+  width: 100%;
+  padding: 0px 25px !important;
+  margin-top: 400px;
+  transition: all 0.3s ease-in-out !important;
+}
+#container #center_box #searchbox:focus {
+  background: rgba(21, 21, 21, 0.89);
+  transition: all 0.3s ease-in-out !important;
+}
+#container #right_box {
+  width: 20%;
+  float: right;
+}
+#container #right_box .box_list {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) !important;
+  color: #fff;
+  font-size: 16pt;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  height: 14.5%;
+  width: 100%;
+  margin-bottom: 9px;
+  line-height: 51px;
+}
+#container #right_box li {
+  position: relative;
+  list-style: none;
+}
