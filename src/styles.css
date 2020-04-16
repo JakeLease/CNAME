@@ -6,6 +6,7 @@ a {
 }
 body {
   background-image: url("bg3.jpg");
+     background-position: center; 
 }
 #container #time_box {
   height: 20px;
