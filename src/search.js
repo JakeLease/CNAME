@@ -14,11 +14,6 @@ String.prototype.replaceChars = function(character, replacement){
  
 function search(query){
     switch(query.substr(0, 2)){
-        case "-u":
-            query = query.substr(3);
-            window.location = "https://userstyles.org/styles/browse?search_terms=" +
-            query.replaceChars(" ", "+");
-            break;
 
         case "-y":
             query = query.substr(3);
@@ -34,22 +29,16 @@ function search(query){
             query.replaceChars(" ", "%20");
             break;
 
-        case "-n":
+        case "-r":
             query = query.substr(3);
             window.location = 
-    	"https://www.nyaa.si/?f=0&c=1_2&q=" + 
-    	query.replaceChars("+", "%2B");
+    	"https://old.reddit.com/search?q=" + 
+    	query.replaceChars("", "+");
     	break;
 
-        case "-e":
-        	query=query.substr(3);
-        	window.location = 
-	"https://exhentai.org/?f_doujinshi=1&f_manga=1&f_artistcg=1&f_gamecg=1&f_western=0&f_non-h=0&f_imageset=0&f_cosplay=0&f_asianporn=0&f_misc=0&f_search=" + 
-	query.concat("&f_apply=Apply+Filter");
-	break;
 
         default:
-            window.location="https://www.google.fr/search?q=" +
+            window.location="https://www.google.com/search?q=" +
                 query.replaceChars("", "+");
     }
 }
