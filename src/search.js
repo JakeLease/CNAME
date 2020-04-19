@@ -22,6 +22,14 @@ function search(query){
             query.replaceChars(" ", "+");
             break;
 
+                
+       case "-a":
+            query = query.substr(3);
+            window.location =
+            "https://www.amazon.com/s?k=" +
+            query.replaceChars(" ", "+");
+            break;             
+                    
         case "-w":
             query = query.substr(3);
             window.location =
