@@ -21,7 +21,12 @@ function search(query){
             "https://www.youtube.com/results?search_query=" +
             query.replaceChars(" ", "+");
             break;
-
+                    
+         case "-b":
+            query = query.substr(3);
+            window.location =
+            "https://b-ok.cc/s/" +
+            break;
                 
        case "-a":
             query = query.substr(3);
