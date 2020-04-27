@@ -25,7 +25,8 @@ function search(query){
          case "-b":
             query = query.substr(3);
             window.location =
-            "https://b-ok.cc/s/" +;
+            "https://b-ok.cc/s/" +
+             query.replaceChars(" ", " ");
             break;
                 
        case "-a":
