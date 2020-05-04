@@ -21,6 +21,13 @@ function search(query){
             "https://www.youtube.com/results?search_query=" +
             query.replaceChars(" ", "+");
             break;
+       
+       case "-s":
+            query = query.substr(3);
+            window.location =
+            "https://stockx.com/search/sneakers?s=" +
+            query.replaceChars(" ", " ");
+            break;
                     
          case "-b":
             query = query.substr(3);
