@@ -22,6 +22,14 @@ function search(query){
             query.replaceChars(" ", "+");
             break;
        
+        case "-y":
+            query = query.substr(3);
+            window.location =
+            "https://github.com/search?q=" +
+            query.replaceChars(" ", "+");
+            break;
+            
+                    
        case "-s":
             query = query.substr(3);
             window.location =
