@@ -22,7 +22,7 @@ function search(query){
             query.replaceChars(" ", "+");
             break;
        
-        case "-y":
+        case "-g":
             query = query.substr(3);
             window.location =
             "https://github.com/search?q=" +
